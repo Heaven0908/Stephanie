@@ -6,7 +6,6 @@ body {
     margin: 0;
     background-color: black;
     background-size: 100%; /* 自动调整大小以平铺背景 */
-    background-repeat: repeat; /* 平铺背景图像 */
     background-position: center left; /* 背景居中 */
     background-image: url('photo2.jpg');
 }
