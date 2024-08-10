@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    background-size: 100%; /* 自动调整大小以平铺背景 */
+    background-repeat: repeat; /* 平铺背景图像 */
+    background-position: center left; /* 背景居中 */
+    background-image: url('photo2.jpg');
+}
+
+.slideshow-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    z-index: -1;
+}
+
+
+.bg1{ background-image: url('photo2.jpg'); }
+.bg2{ background-image: url('photo1.JPG'); }
+.bg3{ background-image: url('photo3.jpg'); }
+
+
+
+.countdown {
+    position: absolute;
+    font-size: 8em;
+    text-align: center;
+    bottom: 400px;
+    color:linen;
+    -webkit-text-stroke: 2px pink;
+}
+.text-container{
+    position: absolute;
+    top:600px;
+    width: 600px;
+    font-size: 1.6em;
+    text-align: center;
+    color: black; /* 可以根据需要调整颜色 */
+    white-space: pre-wrap; /* 保持文本的格式 */
+    font-weight: 500;
+}
+
+
+.heart-shape{
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+}
+
+.photo {
+    position: absolute;
+    opacity: 0;
+    width: 100px;  /* 固定宽度 */
+    height: 100px; /* 固定高度 */
+    transform: scale(10);  /* 初始放大效果 */
+    transition: opacity 1s ease-in-out, transform 2s ease-in-out;
+    border-radius: 0;
+}
+
+.photo.show {
+    opacity: 1;
+    transform: scale(1.5);
+    
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
