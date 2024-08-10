@@ -29,9 +29,8 @@ body {
 
 .countdown {
     position: absolute;
-    font-size: 8em;
+    font-size: 6em;
     text-align: center;
-    bottom: 400px;
     color:linen;
     -webkit-text-stroke: 2px pink;
 }
