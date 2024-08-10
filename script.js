@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
    let days = 1;
 
-   const slideshowInterval = setInterval(changeBackground, 4000);
+   const slideshowInterval = setInterval(changeBackground, 3000);
 
    function changeBackground() {
        slideshowContainer.classList.remove(...backgrounds);
